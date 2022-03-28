@@ -2,7 +2,7 @@ const Client = require('discord.js-selfbot-v13')
 const client = new Client()
 
 const anigame = ["571027211407196161"];//Anigame ID
-const config = require('./config.json')
+const config = require('./config.js')
 client.on('messageCreate', async message => {
   if(anigame.includes(message.author.id)) {
     if(config.servers.includes(message.guild.id)) {
